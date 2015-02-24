@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="MapType_Text_Size">20dip</dimen>
+    <dimen name="ui_magin">5dip</dimen>
+    
+</resources>

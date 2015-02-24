@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+         />
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <!-- The main content view -->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/gps_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/ui_magin"
+                android:layout_marginLeft="@dimen/ui_magin"
+                android:layout_marginRight="@dimen/ui_magin"
+                android:layout_marginTop="@dimen/ui_magin"
+                android:background="@android:color/transparent"
+                android:gravity="center|left"
+                android:textColor="#0000CD"
+                android:textSize="@dimen/MapType_Text_Size" />
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/helf_Transparent"
+                android:visibility="gone" >
+            </ListView>
+        </RelativeLayout>
+        <!-- The navigation drawer -->
+
+        <RelativeLayout
+            android:id="@+id/drawer"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/helf_Transparent"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:layout_marginTop="@dimen/ui_magin"
+                        android:gravity="center|left"
+                        android:text="@string/maptype"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/bt_streetview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:textColor="#ffffff"
+                        android:text="@string/streetview"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:layout_marginTop="@dimen/ui_magin"
+                        android:gravity="center|left"
+                        android:text="@string/Function"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ui_magin"
+                        android:layout_marginLeft="@dimen/ui_magin"
+                        android:layout_marginRight="@dimen/ui_magin"
+                        android:background="@drawable/roundbutton_blue"
+                        android:text="@string/takeptr"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/MapType_Text_Size" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

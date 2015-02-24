@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">地圖旅行</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="maptype">地圖型態</string>
+    <string name="Function">功能</string>
+    <string name="start_track">追蹤</string>
+    <string name="stop_track">停止追蹤</string>  
+    <string name="search_title">搜尋...</string>
+    <string name="rader_start">開始雷達</string>
+    <string name="rader_stop">停止雷達</string>
+    <string name="takeptr">拍照</string>
+    <string name="streetview">街景</string>
+</resources>
